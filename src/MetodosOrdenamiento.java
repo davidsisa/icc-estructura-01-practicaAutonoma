@@ -180,7 +180,11 @@ public class MetodosOrdenamiento {
     }
 
     // Método de inserción con errores
-    // Error encontrado: 
+    // Error encontrado: Error en la definicion de la variable i, i se iguala a j pero deber ir con un menos 1 debido a que no se compararia
+    //con el numero anterior a j. Como sabemos en insercion se debe comparar la segunda posicion con la primera por eos el menos 1.
+    //Corregir agregando el -1 : LINEA : 193
+    //Error 2: En el while la variable i debe menorar para que pueda repetirse el bucle correctamente, de lo contrario no se cumpliria con la 
+    //condicional. LINEA: 195 Y LINEA 197
     public int[] insercionTercero(int[] arregloOriginal) {
 
         int[] arreglo = Arrays.copyOf(arregloOriginal, arregloOriginal.length);
